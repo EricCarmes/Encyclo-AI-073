@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-73-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - LES NEUROSCIENCES : UNE EXPLORATION FASCINANTE DU CERVEAU HUMAIN</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - INTRODUCTION AUX NEUROSCIENCES : DÉFINITION ET CHAMP D'ÉTUDE</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Origines et développement des neurosciences</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Les disciplines intégrées dans les neurosciences</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Les objectifs et enjeux des neurosciences</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - LES MÉCANISMES DE LA PERCEPTION ET DE LA MÉMOIRE</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Les bases biologiques de la perception</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Les processus de formation de la mémoire</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Les troubles de la mémoire et leurs implications</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - LE RÔLE DES ÉMOTIONS DANS LA COGNITION</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Interaction entre émotions et cognition</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Les bases neurobiologiques des émotions</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Applications pratiques des recherches sur les émotions</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LA PLASTICITÉ CÉRÉBRALE : ADAPTABILITÉ ET APPRENTISSAGE</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Les mécanismes de la plasticité cérébrale</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - La plasticité cérébrale dans la réhabilitation</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Implications pour l'éducation et l'apprentissage</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - LES TECHNOLOGIES D'IMAGERIE CÉRÉBRALE AVANCÉES</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Introduction aux technologies d'imagerie</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Applications cliniques des technologies d'imagerie</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Développements futurs en imagerie cérébrale</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - APPLICATIONS DES NEUROSCIENCES EN ÉDUCATION</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Comprendre le développement cérébral des élèves</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Méthodes pédagogiques basées sur les neurosciences</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - L'impact des neurosciences sur l'éducation inclusive</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - IA ET NEUROSCIENCES</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Les principes neuroscientifiques dans l'IA</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Applications de l'IA en neurosciences</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Les défis et limites de l'intégration IA-neurosciences</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - LES ENJEUX ÉTHIQUES DES AVANCÉES NEUROSCIENTIFIQUES</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - La manipulation des capacités cérébrales</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - La vie privée et les données cérébrales</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Les limites de l'exploration neuroscientifique</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - LES NEUROSCIENCES : UN REGARD VERS L'AVENIR</a></li>
+  </ul>
+
+  <p><a href="ID-0-73-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
